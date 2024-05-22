@@ -5,7 +5,7 @@
 @section('content')
     <h1>ChatBot Laravel</h1>
 
-    <form action="{{ route('chatbot.ask') }}" method="POST">
+    <form action="{{ route('ask') }}" method="POST">
         @csrf
         <div>
             <label for="question">Votre question</label>
@@ -20,6 +20,6 @@
         <h2>Réponse :</h2>
         <p>{{ $answer }}</p>
     @else
-        <h2>En attente de votre question...</h2>
+        <h2>En attente de votre question....</h2>
     @endif
 @endsection

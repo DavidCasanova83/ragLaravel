@@ -28,7 +28,7 @@ class ChatBotController extends Controller
         }
 
         if ($question) {
-            $vectorStore = new FileSystemVectorStore(storage_path('documents-vectorStore.json'));
+            $vectorStore = new FileSystemVectorStore(storage_path('../documents-vectorStore.json'));
             $embeddingGenerator = new OpenAI3SmallEmbeddingGenerator();
 
             // Créer une instance de OpenAIConfig avec la clé API

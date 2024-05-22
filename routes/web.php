@@ -15,4 +15,4 @@ use App\Http\Controllers\ChatBotController;
 */
 
 Route::get('/', [ChatBotController::class, 'index'])->name('chatbot.index');
-Route::post('/chatbot/ask', [ChatBotController::class, 'ask'])->name('chatbot.ask');
+Route::post('/ask', [ChatBotController::class, 'ask'])->name('ask');
